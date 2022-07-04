@@ -1,0 +1,41 @@
+.banner {
+    height: 350px;
+    background-image: url("../assets/img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.black-opacity {
+    height: 350px;
+    background-color: #21212173;
+}
+
+.banner .container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    color: var(--color-white);
+}
+
+.banner__title {
+    font-size: 2rem;
+}
+
+.banner__subtitle {
+    font-weight: bold;
+}
+
+.banner__link {
+    align-self: flex-start;
+    padding: 1rem;
+    background-color: var(--color-blue-100);
+    color: var(--color-white);
+}
+
+.banner__link:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue-100);
+}
+
