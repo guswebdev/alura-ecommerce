@@ -1,41 +1,84 @@
 .header {
-    background-color: var(--color-blue-100);
-    padding: 1rem 0;
+  background-color: var(--color-white);
+  padding: 1rem 0;
 }
 
-.header__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
-    color: var(--color-black);
-    font-size: 1.25rem;
-    color: var(--color-white)
+  flex-basis: 30%;
+  transition: transform 0.3s;
 }
 
-.header__nav {
+.header__logo:hover {
+  transform: scale(1.1);
+}
+
+.header__login {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.header__login-link {
+  display: block;
+  padding: 0.5rem;
+  border: solid thin var(--color-blue-100);
+  color: var(--color-blue-100);
+  font-weight: 700;
+}
+
+.header__login-link:hover {
+  background-color: var(--color-blue-100);
+  color: var(--color-white);
+}
+
+.header__search-link {
+  color: var(--color-black);
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    flex-basis: 20%;
+  }
+
+  .header__login {
+    flex-basis: 20%;
+  }
+
+  .header__search-icon {
     display: none;
-}
+  }
 
-.header__link {
-    color: var(--color-white);
-    padding: 0 .5rem;
-    transition: all .3s;
-}
+  .header__search-input {
+    flex-basis: 40%;
+    background-color: var(--color-lightgray);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 30px;
+  }
 
-.header__link:hover {
-    text-decoration: underline;
-}
+  .header__search-input input {
+    flex-grow: 1;
+    background-color: var(--color-lightgray);
+    border: none;
+  }
 
-.header__link--contacto {
-    font-weight: bold;
-    color: var(--color-white);
-}
+  .header__search-input input:focus {
+    outline: none;
+  }
 
-@media screen and (min-width: 1024px){
-    .header__nav {
-        display: initial;
-    }
+  .header__search-input input::placeholder {
+    color: var(--color-gray);
+  }
+  .header__search-input a {
+    color: var(--color-gray);
+  }
 }
