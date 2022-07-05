@@ -1,0 +1,109 @@
+.contact {
+    padding: 4rem 0;
+    background-color: var(--color-blue-10);
+  }
+  
+  .contact > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .contact__nav,
+  .contact__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .contact__logo img {
+    transition: transform 0.3s;
+  }
+  
+  .contact__logo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .contact__link {
+    color: var(--color-blue-100);
+  }
+  
+  .contact__link:hover {
+    text-decoration: underline;
+  }
+  
+  .contact__form,
+  .form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form__field {
+    gap: 0.5rem;
+  }
+  
+  .form__input {
+    padding: 1rem;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--color-white);
+    border: none;
+  }
+  
+  .form__input:focus {
+    outline-color: var(--color-blue-100);
+  }
+  
+  .form__btn {
+    align-self: flex-start;
+    padding: 1rem;
+    background-color: var(--color-blue-100);
+    color: var(--color-white);
+    border: solid thin transparent;
+  }
+  
+  .form__btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue-100);
+    border-color: var(--color-blue-100);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .contact > .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contact__nav {
+      flex-basis: 30%;
+    }
+    
+    .contact__form {
+      flex-basis: 60%;
+    }
+  
+    .contact__nav,
+    .contact__menu {
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .contact__nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .contact__menu{
+      gap: 2rem;
+    }
+  
+    .contact__nav,
+    .contact__form,
+    .contact__logo,
+    .contact__menu {
+      flex-basis: 45%;
+    }
+  }

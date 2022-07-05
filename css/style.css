@@ -13,18 +13,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-/*
-  @media screen and (min-width: 768px) {
-    html {
-      font-size: 18px;
-    }
-  }
-  @media screen and (min-width: 1024px) {
-    html {
-      font-size: 20px;
-    }
-  }
-  */
+
 *,
 *::after,
 *::before {
@@ -56,6 +45,10 @@ img {
 
 p {
   line-height: 1.5;
+}
+
+textarea {
+  resize: none;
 }
 
 .container {
