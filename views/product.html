@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+
+    <!-- Raleway - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome - Iconos-->
+    <script src="https://kit.fontawesome.com/ed2ba7d635.js" crossorigin="anonymous"></script>
+
+    <!-- Importacion Estilos CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+
+    <!-- Seccion Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="../assets/img/Logo.png" alt="Logo Alura Geek">
+            </a>
+            <form class="header__search-input d-none">
+                <!--Lo Oculte en mobile-->
+                <input type="text" placeholder="¿Qué deseas buscar?">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </form>
+            <div class="header__login">
+                <a href="views/login.html" class="header__login-link">Login</a>
+            </div>
+            <div class="header__search-icon">
+                <a href="#" class="header__search-link">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
+    </header><!-- Seccion Header -->
+
+    <main>
+
+        <!-- Seccion Product -->
+        <section class="product">
+            <div class="container">
+                <div class="product__img">
+                    <img src="../assets/img/star-war-1.png" alt="">
+                </div>
+                <div class="product__content">
+                    <h2 class="product__title">Producto XYZ</h2>
+                    <p class="product__price">R$ 60,00</p>
+                    <p class="product__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores natus dolor repellat vitae
+                        esse ratione sequi ad vero explicabo eos nobis perferendis blanditiis impedit maiores hic
+                        laudantium magnam, commodi quas?
+                    </p>
+                    <a href="../index.html">Volver a la tienda</a>
+                </div>
+            </div>
+        </section><!-- Seccion Product -->
+
+        <!-- Seccion Galeria -->
+        <section class="gallery">
+            <div class="container">
+
+                <article class="gallery__category">
+                    <div class="category__header">
+                        <h2 class="category__title">Productos Similares</h2>
+                        <a href="#" class="category__link">
+                            <span class="category__link-text">Ver Todo</span>
+                            <i class="fa-solid fa-arrow-right category__link-icon"></i>
+                        </a>
+                    </div>
+                    <div class="category__body">
+                        <div class="category__card">
+                            <img src="../assets/img/star-war-1.png" alt="Taza star war" class="card__img">
+                            <h3 class="card__title">Producto XYZ</h3>
+                            <p class="card__price">R$ 60,00</p>
+                            <a href="#" class="card__link">Ver Producto</a>
+                        </div>
+                        <div class="category__card">
+                            <img src="../assets/img/star-war-2.png" alt="juguete darth vader" class="card__img">
+                            <h3 class="card__title">Producto XYZ</h3>
+                            <p class="card__price">R$ 60,00</p>
+                            <a href="#" class="card__link">Ver Producto</a>
+                        </div>
+                        <div class="category__card">
+                            <img src="../assets/img/star-war-3.png" alt=" Juguete Yoda" class="card__img">
+                            <h3 class="card__title">Producto XYZ</h3>
+                            <p class="card__price">R$ 60,00</p>
+                            <a href="#" class="card__link">Ver Producto</a>
+                        </div>
+                        <div class="category__card">
+                            <img src="../assets/img/star-war-4.png" alt="Soldado clone Wars" class="card__img">
+                            <h3 class="card__title">Producto XYZ</h3>
+                            <p class="card__price">R$ 60,00</p>
+                            <a href="#" class="card__link">Ver Producto</a>
+                        </div>
+                        <div class="category__card category__card--none d-none">
+                            <img src="../assets/img/star-war-5.png" alt="Baby Yoda" class="card__img">
+                            <h3 class="card__title">Producto XYZ</h3>
+                            <p class="card__price">R$ 60,00</p>
+                            <a href="#" class="card__link">Ver Producto</a>
+                        </div>
+                        <div class="category__card category__card--none d-none">
+                            <img src="../assets/img/star-war-6.png" alt="Ben Solo" class="card__img">
+                            <h3 class="card__title">Producto XYZ</h3>
+                            <p class="card__price">R$ 60,00</p>
+                            <a href="#" class="card__link">Ver Producto</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section><!-- Seccion Galeria -->
+
+        <!-- Seccion RodaPie-->
+        <section class="contact">
+            <div class="container">
+                <article class="contact__nav">
+                    <div class="contact__logo">
+                        <img src="../assets/img/Logo.png" alt="Logo Alura Geek">
+                    </div>
+                    <nav class="contact__menu">
+                        <a href="#" class="contact__link">Quienes somos</a>
+                        <a href="#" class="contact__link">Politica de privacidad</a>
+                        <a href="#" class="contact__link">Programa de afiliados</a>
+                        <a href="#" class="contact__link">Nuestras tiendas</a>
+                        <a href="#" class="contact__link">Quiero ser franquiciado</a>
+                        <a href="#" class="contact__link">Anuncie aqui</a>
+                    </nav>
+                </article>
+                <form class="contact__form">
+                    <h3 class="form__title">Hable con nosotros</h3>
+                    <div class="form__field">
+                        <label for="nombre">Nombre</label>
+                        <input class="form__input" id="nombre" type="text" placeholder="Gustavo Miño">
+                    </div>
+                    <div class="form__field">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form__input" name="message" id="message" cols="30" rows="5"
+                            placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+                    <a href="#" class="form__btn">Enviar Mensaje</a>
+                </form>
+            </div>
+        </section><!-- Seccion RodaPie-->
+
+    </main>
+
+    <!-- Seccion Footer -->
+    <footer class="footer">
+        <small>&copy; 2022 | Desarollado por Gustavo Miño</small>
+    </footer><!-- Seccion Footer -->
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
