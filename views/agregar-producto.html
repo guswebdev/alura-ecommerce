@@ -18,7 +18,7 @@
     <!-- Importacion Estilos CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/nuevo-producto.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
@@ -39,7 +39,7 @@
             </form>
             
             <div class="header__login">
-                <a href="../index.html" class="header__login-link">Volver</a>
+                <a href="#" class="header__login-link">Menu Administrador</a>
             </div>
             
             <div class="header__search-icon">
@@ -52,15 +52,18 @@
 
     <main class="main">
         
-        <!-- Seccion Login -->
-        <section class="login">
+        <!-- Seccion Nuevo Producto -->
+        <section class="nuevo-producto">
             <div class="container">
-                <form action="" class="login__form">
-                    <h2 class="login__title">Iniciar Sesión</h2>
-                    <input class="login__input" type="email" name="email" id="email" placeholder="Escriba su correo electronico">
-                    <input class="login__input" type="text" name="password" id="password" placeholder="Escriba su contraseña">
-                    <input class="login__submit" type="submit" value="Entrar">
-                    <a href="../views/agregar-producto.html">Agregar Producto</a>
+                <form action="" class="nuevo-producto__form">
+                    <h2 class="nuevo-producto__title">Agregar nuevo producto</h2>
+                    <input type="text" name="nombre" class="nuevo-producto__input" placeholder="Nombre del producto">
+                    <input type="text" name="categoria" class="nuevo-producto__input" placeholder="Categoria">
+                    <input type="text" name="url" class="nuevo-producto__input" placeholder="URL de la imagen">
+                    <input type="text" name="url" class="nuevo-producto__input" placeholder="Precio del producto">
+                    <textarea name="descripcion" cols="30" rows="10" class="nuevo-producto__input nuevo-producto__input--textarea" placeholder="Descripcion del producto"></textarea>
+                    <input class="nuevo-producto__submit" type="submit" value="Agregar Producto">
+                    <a href="../views/login.html">Salir de sesion</a>
                 </form>
             </div>
         </section>
