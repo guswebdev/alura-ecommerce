@@ -55,6 +55,10 @@
   .form__input:focus {
     outline-color: var(--color-blue-100);
   }
+
+  .form__alert {
+    color: red;
+  }
   
   .form__btn {
     align-self: flex-start;
