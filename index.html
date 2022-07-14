@@ -231,11 +231,11 @@
                         <a href="#" class="contact__link">Anuncie aqui</a>
                     </nav>
                 </article>
-                <form class="contact__form" data-form>
+                <form class="contact__form" data-form-contact>
                     <h3 class="form__title">Hable con nosotros</h3>
                     <div class="form__field" >
                         <label for="nombre">Nombre</label>
-                        <input class="form__input" id="nombre" type="text" placeholder="Gustavo Miño" data-contact-nombre>
+                        <input class="form__input" id="nombre" name="nombre" type="text" placeholder="Gustavo Miño" data-contact-nombre>
                         <span class="d-none form__alert" data-alert-nombre>Este campo no puede estar vacio o no puede superar los 40 caracteres</span>
                     </div>
                     <div class="form__field" >
@@ -243,7 +243,7 @@
                         <textarea class="form__input" name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje..." data-contact-mensaje></textarea>
                         <span class="d-none form__alert" data-alert-mensaje>Este campo no puede estar vacio o no puede superar los 120 caracteres</span>
                     </div>
-                    <submit class="form__btn" data-contact-btn>Enviar Mensaje</submit>
+                    <input type="submit" value="Enviar Mensaje" class="form__btn" data-contact-btn disabled>
                 </form>
             </div>
         </section><!-- Seccion RodaPie-->
