@@ -55,12 +55,14 @@
         <!-- Seccion Login -->
         <section class="login">
             <div class="container">
-                <form action="" class="login__form">
+                <form action="" class="login__form" data-form-login>
                     <h2 class="login__title">Iniciar Sesión</h2>
-                    <input class="login__input" type="email" name="email" id="email" placeholder="Escriba su correo electronico">
-                    <input class="login__input" type="text" name="password" id="password" placeholder="Escriba su contraseña">
-                    <input class="login__submit" type="submit" value="Entrar">
-                    <a href="../views/admin.html">Menu Administrador</a>
+                    <input class="login__input" type="email" name="email" id="email" placeholder="Escriba su correo electronico" data-login-email>
+                    <span class="d-none login__alert" data-alert-mensaje>Correo Incorrecto</span>
+                    <input class="login__input" type="text" name="password" id="password" placeholder="Escriba su contraseña" data-login-password>
+                    <span class="d-none login__alert" data-alert-mensaje>Contraseña Incorrecta</span>
+                    <input class="login__submit" type="submit" value="Entrar" data-login-btn disabled>
+                    <span class="d-none login__error" data-login-error>Los datos estan incorrectos.</span>
                 </form>
             </div>
         </section>
@@ -104,7 +106,7 @@
         <small>&copy; 2022 | Desarollado por Gustavo Miño</small>
     </footer><!-- Seccion Footer -->
 
-    <script src="app.js" type="module"></script>
+    <script src="../login.js" type="module"></script>
 </body>
 
 </html>
