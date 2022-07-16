@@ -31,17 +31,18 @@
             <a href="#" class="header__logo">
                 <img src="../assets/img/Logo.png" alt="Logo Alura Geek">
             </a>
-            <form class="header__search-input d-none"><!--Lo Oculte en mobile-->
+            <form class="header__search-input d-none">
+                <!--Lo Oculte en mobile-->
                 <input type="text" placeholder="¿Qué deseas buscar?">
                 <a href="#">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </form>
-            
+
             <div class="header__login">
                 <a href="../views/admin.html" class="header__login-link">Menu Administrador</a>
             </div>
-            
+
             <div class="header__search-icon">
                 <a href="#" class="header__search-link">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -51,22 +52,37 @@
     </header><!-- Seccion Header -->
 
     <main class="main">
-        
+
         <!-- Seccion Nuevo Producto -->
         <section class="nuevo-producto">
             <div class="container">
-                <form action="" class="nuevo-producto__form">
+                <form action="" class="nuevo-producto__form" data-nuevo-producto>
                     <h2 class="nuevo-producto__title">Agregar nuevo producto</h2>
-                    <input type="text" name="nombre" class="nuevo-producto__input" placeholder="Nombre del producto">
-                    <input type="text" name="categoria" class="nuevo-producto__input" placeholder="Categoria">
-                    <input type="text" name="url" class="nuevo-producto__input" placeholder="URL de la imagen">
-                    <input type="text" name="url" class="nuevo-producto__input" placeholder="Precio del producto">
-                    <textarea name="descripcion" cols="30" rows="10" class="nuevo-producto__input nuevo-producto__input--textarea" placeholder="Descripcion del producto"></textarea>
-                    <input class="nuevo-producto__submit" type="submit" value="Agregar Producto">
+                    <input type="text" name="nombre" class="nuevo-producto__input" placeholder="Nombre del producto"
+                        data-nuevo-producto-nombre>
+                    <span class="d-none form__alert" data-alert-nombre>Este campo no puede estar vacio o no puede
+                        superar los 20 caracteres</span>
+                    <input type="text" name="categoria" class="nuevo-producto__input" placeholder="Categoria"
+                        data-nuevo-producto-categoria>
+                    <span class="d-none form__alert" data-alert-nombre>Este campo no puede estar vacio o no puede
+                        superar los 50 caracteres</span>
+                    <input type="text" name="url" class="nuevo-producto__input" placeholder="URL de la imagen"
+                        data-nuevo-producto-imagen>
+                    <input type="text" name="price" class="nuevo-producto__input" placeholder="Precio del producto"
+                        data-nuevo-producto-precio>
+                    <span class="d-none form__alert" data-alert-nombre>Este campo no puede estar vacio y solo acepta
+                        numeros</span>
+                    <textarea name="descripcion" cols="30" rows="10"
+                        class="nuevo-producto__input nuevo-producto__input--textarea"
+                        placeholder="Descripcion del producto" data-nuevo-producto-descripcion></textarea>
+                    <span class="d-none form__alert" data-alert-nombre>Este campo no puede estar vacio o no puede
+                        superar los 150 caracteres</span>
+                    <input class="nuevo-producto__submit" type="submit" value="Agregar Producto"
+                        data-nuevo-producto-btn>
                 </form>
             </div>
         </section>
-        
+
 
         <!-- Seccion RodaPie-->
         <section class="contact">
@@ -84,17 +100,23 @@
                         <a href="#" class="contact__link">Anuncie aqui</a>
                     </nav>
                 </article>
-                <form class="contact__form">
+                <form class="contact__form" data-form-contact>
                     <h3 class="form__title">Hable con nosotros</h3>
                     <div class="form__field">
                         <label for="nombre">Nombre</label>
-                        <input class="form__input" id="nombre" type="text" placeholder="Gustavo Miño">
+                        <input class="form__input" id="nombre" name="nombre" type="text" placeholder="Gustavo Miño"
+                            data-contact-nombre>
+                        <span class="d-none form__alert" data-alert-nombre>Este campo no puede estar vacio o no puede
+                            superar los 40 caracteres</span>
                     </div>
                     <div class="form__field">
                         <label for="message">Mensaje</label>
-                        <textarea class="form__input" name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+                        <textarea class="form__input" name="message" id="message" cols="30" rows="5"
+                            placeholder="Escribe tu mensaje..." data-contact-mensaje></textarea>
+                        <span class="d-none form__alert" data-alert-mensaje>Este campo no puede estar vacio o no puede
+                            superar los 120 caracteres</span>
                     </div>
-                    <a href="#" class="form__btn">Enviar Mensaje</a>
+                    <input type="submit" value="Enviar Mensaje" class="form__btn" data-contact-btn disabled>
                 </form>
             </div>
         </section><!-- Seccion RodaPie-->
@@ -106,7 +128,8 @@
         <small>&copy; 2022 | Desarollado por Gustavo Miño</small>
     </footer><!-- Seccion Footer -->
 
-    <script src="app.js" type="module"></script>
+    <script src="../app.js" type="module"></script>
+    <script src="../agregar-producto.js" type="module"></script>
 </body>
 
 </html>
