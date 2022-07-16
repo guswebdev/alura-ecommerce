@@ -1,13 +1,15 @@
 import { validarCategoriaProducto } from "./js/validarCategoriaProducto.js"
 import { validarDescripcionProducto } from "./js/validarDescripcionProducto.js"
+import { validarImagenProducto } from "./js/validarImagenProducto.js"
 import { validarNombreProducto } from "./js/validarNombreProducto.js"
 import { validarPrecioProducto } from "./js/validarPrecioProducto.js"
 
 const d = document
 
+
 const $formNuevoProducto = d.querySelector('[data-nuevo-producto]')
 
-const formNuevoProducto = (e) => {
+const formNuevoProducto = async (e) => {
     e.preventDefault()
 
     const nombre = d.querySelector('[data-nuevo-producto-nombre]')
@@ -27,8 +29,28 @@ const formNuevoProducto = (e) => {
     if(validarCategoriaProducto(categoria)) return
     if(validarPrecioProducto(precio)) return
     if(validarDescripcionProducto(descripcion)) return
+    if(validarImagenProducto(imagen)) return
 
-    console.log('Esto creo que no deberia verse')
+    const nuevoProducto = {
+        nombre: nombre.value,
+        categoria: categoria.value,
+        image: imagen.value,
+        price: precio.value,
+        description: descripcion.value,
+    }
+
+    console.log(nuevoProducto)
+
+    try {
+
+        const res = await fetch('../assets/json/products.json')
+        const json = res.json()
+
+        console.log(json)
+        
+    } catch (error) {
+        
+    }
 }
 
 $formNuevoProducto.addEventListener('submit', formNuevoProducto)
