@@ -1,0 +1,36 @@
+[
+  {
+    "users": [
+      {
+        "email": "gusemmanuel23@gmail.com",
+        "password": 123,
+        "id": 1
+      },
+      {
+        "email": "jesicaanahisoveron@gmail.com",
+        "password": 111,
+        "id": 2
+      }
+    ]
+  },
+  {
+    "products": [
+      {
+        "nombre": "producto xyz",
+        "categoria": "consola",
+        "image": "https://dominio.com/images/ejemplo.png",
+        "price": 50,
+        "description": "Este es un producto interesante..",
+        "id": 1
+      },
+      {
+        "nombre": "producto xyz",
+        "categoria": "diversos",
+        "image": "https://dominio.com/images/ejemplo2.png",
+        "price": 50,
+        "description": "Este es un producto interesante..",
+        "id": 2
+      }
+    ]
+  }
+]
