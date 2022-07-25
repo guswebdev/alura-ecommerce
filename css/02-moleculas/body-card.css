@@ -1,0 +1,9 @@
+@import '../01-atomos/card-title.css';
+@import '../01-atomos/card-price.css';
+@import '../01-atomos/card-btn.css';
+
+.body__card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

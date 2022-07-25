@@ -1,0 +1,7 @@
+@import '../02-moleculas/head-link.css';
+
+.catalogue__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

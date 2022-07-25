@@ -1,0 +1,19 @@
+@import '../03-organismos/catalogue-head.css';
+@import '../03-organismos/catalogue-body.css';
+
+.catalogue {
+    padding: 2rem 0;
+    background-color: var(--color-white);
+}
+
+.catalogue > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .catalogue > .container {
+        gap: 3rem;
+    }
+}
