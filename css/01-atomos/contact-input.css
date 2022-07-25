@@ -1,0 +1,11 @@
+.contact__input {
+    font-family: "Raleway", sans-serif;
+    padding: 1rem;
+    border: none;
+    border-bottom: thin solid var(--color-gray);
+    outline-color: var(--color-blue-100);
+}
+
+.contact__input::placeholder {
+    color: var(--color-gray)
+}

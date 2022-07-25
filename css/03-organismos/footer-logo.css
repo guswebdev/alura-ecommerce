@@ -1,0 +1,19 @@
+@import '../02-moleculas/logo-link.css';
+
+.footer__logo {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__logo {
+        text-align: left;
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__logo {
+        flex-basis: 25%;
+        margin-top: -15px;
+    }
+}

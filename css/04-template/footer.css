@@ -1,0 +1,29 @@
+@import '../03-organismos/footer-logo.css';
+@import '../03-organismos/footer-nav.css';
+@import '../03-organismos/footer-copyright.css';
+@import '../03-organismos/footer-contact.css';
+
+.footer {
+    padding: 2rem 0;
+    background-color: var(--color-blue-10);
+}
+
+.footer > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer > .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 1rem;
+    }
+}

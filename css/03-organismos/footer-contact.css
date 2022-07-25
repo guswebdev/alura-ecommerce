@@ -1,0 +1,22 @@
+@import '../02-moleculas/contact-head.css';
+@import '../02-moleculas/contact-group.css';
+@import '../02-moleculas/contact-submit.css';
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__contact {
+        flex-grow: 1;
+        margin-top: -60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__contact {
+        margin-top: 0;
+    }
+}

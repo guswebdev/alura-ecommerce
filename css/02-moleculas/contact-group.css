@@ -1,0 +1,8 @@
+@import '../01-atomos/contact-label.css';
+@import '../01-atomos/contact-input.css';
+
+.contact__group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

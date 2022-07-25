@@ -1,0 +1,14 @@
+.contact__btn {
+    padding: 1rem 2rem;
+    border: thin solid var(--color-blue-100);
+    color: var(--color-white);
+    background-color: var(--color-blue-100);
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+
+.contact__btn:hover {
+    color: var(--color-blue-100);
+    background-color: var(--color-white);
+}

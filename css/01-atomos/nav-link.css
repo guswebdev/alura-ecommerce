@@ -1,0 +1,14 @@
+.nav__link {
+  color: var(--color-black);
+  text-align: center;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    text-align: left;
+  }
+}
