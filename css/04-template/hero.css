@@ -1,0 +1,21 @@
+@import '../03-organismos/hero-content.css';
+
+.hero {
+    min-height: 33vh;
+    background-image: url('../../assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__background {
+    min-height: inherit;
+    background-color: var(--color-black-50);
+}
+
+.hero .container {
+    min-height: inherit;
+    display: flex;
+    align-items: flex-end;
+}
+

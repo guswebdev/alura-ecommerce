@@ -1,0 +1,17 @@
+@import "../01-atomos/content-title.css";
+@import "../01-atomos/content-description.css";
+@import "../01-atomos/content-btn.css";
+
+.hero__content {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    padding: 2rem 0;
+  }
+}
