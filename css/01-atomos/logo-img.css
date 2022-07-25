@@ -1,0 +1,7 @@
+.logo__img {
+    transition: transform .3s;
+}
+
+.logo__img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,6 @@
+@import '../01-atomos/search-input.css';
+@import '../01-atomos/search-button.css';
+
+.search__form {
+    display: flex;
+}

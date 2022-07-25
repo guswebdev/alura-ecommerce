@@ -15,243 +15,41 @@
     <!-- FontAwesome - Iconos-->
     <script src="https://kit.fontawesome.com/ed2ba7d635.js" crossorigin="anonymous"></script>
 
-    <!-- Importacion Estilos CSS -->
+    <!-- Importaciones CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/05-paginas/main.css">
+
+    
 </head>
 
 <body>
 
-    <!-- Seccion Header -->
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header"><!--Template-->
         <div class="container">
-            <a href="#" class="header__logo">
-                <img src="assets/img/Logo.png" alt="Logo Alura Geek">
-            </a>
-            <form class="header__search-input d-none"><!--Lo Oculte en mobile-->
-                <input type="text" placeholder="¿Qué deseas buscar?">
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </form>
+            <div class="header__logo">
+                <a href="#" class="logo__link">
+                    <img class="logo__img" src="assets/img/Logo.png" alt="Logo Alura Geek"><!--Atomo-->
+                </a><!--Molecula-->
+            </div><!--Organismos-->
             <div class="header__login">
-                <a href="views/login.html" class="header__login-link">Login</a>
-            </div>
-            <div class="header__search-icon">
-                <a href="#" class="header__search-link">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
+                <button class="login__btn">Login</button><!--Atomo-->
+            </div><!--Organismos-->
+            <div class="header__search">
+                <form class="search__form">
+                    <input class="search__input" type="text" placeholder="¿Qué deseas buscar?"><!--Atomo-->
+                    <button class="search__button" type="submit"><!--Atomo-->
+                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                    </button>
+                </form><!--Molecula-->
+            </div><!--Organismos-->
         </div>
-    </header><!-- Seccion Header -->
-
-    <main>
-
-        <!-- Seccion Banner -->
-        <section class="banner">
-            <div class="black-opacity">
-                <div class="container">
-                    <h2 class="banner__title">Febrero Promocional</h2>
-                    <p class="banner__subtitle">
-                        Productos seleccionados con 33% de descuento
-                    </p>
-                    <a href="#" class="banner__link">Ver Consolas</a>
-                </div>
-            </div>
-        </section><!-- Seccion Banner -->
-
-        <!-- Seccion Galeria -->
-        <section class="gallery">
-            <div class="container">
-                <article class="gallery__category">
-                    <div class="category__header">
-                        <h2 class="category__title">Star Wars</h2>
-                        <a href="#" class="category__link">
-                            <span class="category__link-text">Ver Todo</span>
-                            <i class="fa-solid fa-arrow-right category__link-icon"></i>
-                        </a>
-                    </div>
-                    <div class="category__body">
-                        <div class="category__card">
-                            <img src="assets/img/star-war-1.png" alt="Taza star war" class="card__img">
-                            <h3 class="card__title">Producto XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="views/product.html" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/star-war-2.png" alt="juguete darth vader" class="card__img">
-                            <h3 class="card__title">Producto XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/star-war-3.png" alt=" Juguete Yoda" class="card__img">
-                            <h3 class="card__title">Producto XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/star-war-4.png" alt="Soldado clone Wars" class="card__img">
-                            <h3 class="card__title">Producto XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card category__card--none d-none">
-                            <img src="assets/img/star-war-5.png" alt="Baby Yoda" class="card__img">
-                            <h3 class="card__title">Producto XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card category__card--none d-none">
-                            <img src="assets/img/star-war-6.png" alt="Ben Solo" class="card__img">
-                            <h3 class="card__title">Producto XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                    </div>
-                </article>
+    </header><!-- HEADER -->
 
 
-                <article class="gallery__category">
-                    <div class="category__header">
-                        <h2 class="category__title">Consolas</h2>
-                        <a href="#" class="category__link">
-                            <span class="category__link-text">Ver Todo</span>
-                            <i class="fa-solid fa-arrow-right category__link-icon"></i>
-                        </a>
-                    </div>
-                    <div class="category__body">
-                        <div class="category__card">
-                            <img src="assets/img/consola-1.png" alt="" class="card__img">
-                            <h3 class="card__title">Consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/consola-2.png" alt="" class="card__img">
-                            <h3 class="card__title">Consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/consola-3.png" alt="" class="card__img">
-                            <h3 class="card__title">Consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/consola-4.png" alt="" class="card__img">
-                            <h3 class="card__title">Consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card category__card--none d-none">
-                            <img src="assets/img/consola-5.png" alt="" class="card__img">
-                            <h3 class="card__title">Consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card category__card--none d-none">
-                            <img src="assets/img/consola-6.png" alt="" class="card__img">
-                            <h3 class="card__title">Consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                    </div>
-                </article>
-
-
-                <article class="gallery__category">
-                    <div class="category__header">
-                        <h2 class="category__title">Diversos</h2>
-                        <a href="#" class="category__link">
-                            <span class="category__link-text">Ver Todo</span>
-                            <i class="fa-solid fa-arrow-right category__link-icon"></i>
-                        </a>
-                    </div>
-                    <div class="category__body">
-                        <div class="category__card">
-                            <img src="assets/img/diversos-1.png" alt="" class="card__img">
-                            <h3 class="card__title">Control y consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/diversos-2.png" alt="" class="card__img">
-                            <h3 class="card__title">Control y consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/diversos-3.png" alt="" class="card__img">
-                            <h3 class="card__title">Control y consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card">
-                            <img src="assets/img/diversos-4.png" alt="" class="card__img">
-                            <h3 class="card__title">Control y consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card category__card--none d-none d-none">
-                            <img src="assets/img/diversos-5.png" alt="" class="card__img">
-                            <h3 class="card__title">Control y consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                        <div class="category__card category__card--none d-none">
-                            <img src="assets/img/diversos-6.png" alt="" class="card__img">
-                            <h3 class="card__title">Control y consola XYZ</h3>
-                            <p class="card__price">R$ 60,00</p>
-                            <a href="#" class="card__link">Ver Producto</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section><!-- Seccion Galeria -->
-
-        <!-- Seccion RodaPie-->
-        <section class="contact">
-            <div class="container">
-                <article class="contact__nav">
-                    <div class="contact__logo">
-                        <img src="assets/img/Logo.png" alt="Logo Alura Geek">
-                    </div>
-                    <nav class="contact__menu">
-                        <a href="#" class="contact__link">Quienes somos</a>
-                        <a href="#" class="contact__link">Politica de privacidad</a>
-                        <a href="#" class="contact__link">Programa de afiliados</a>
-                        <a href="#" class="contact__link">Nuestras tiendas</a>
-                        <a href="#" class="contact__link">Quiero ser franquiciado</a>
-                        <a href="#" class="contact__link">Anuncie aqui</a>
-                    </nav>
-                </article>
-                <form class="contact__form">
-                    <h3 class="form__title">Hable con nosotros</h3>
-                    <div class="form__field">
-                        <label for="nombre">Nombre</label>
-                        <input class="form__input" id="nombre" type="text" placeholder="Gustavo Miño">
-                    </div>
-                    <div class="form__field">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form__input" name="message" id="message" cols="30" rows="5" placeholder="Escribe tu mensaje..."></textarea>
-                    </div>
-                    <a href="#" class="form__btn">Enviar Mensaje</a>
-                </form>
-            </div>
-        </section><!-- Seccion RodaPie-->
-
-    </main>
-
-    <!-- Seccion Footer -->
-    <footer class="footer">
-        <small>&copy; 2022 | Desarollado por Gustavo Miño</small>
-    </footer><!-- Seccion Footer -->
+    <!-- MAIN -->
+    <!-- FOOTER -->
+    
 
     <script src="app.js" type="module"></script>
 </body>

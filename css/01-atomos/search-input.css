@@ -1,0 +1,15 @@
+.search__input {
+    font-family: "Raleway", sans-serif;
+    flex-grow: 1;
+    padding: 1rem 2rem;
+    font-size: 1.15rem;
+    background-color: var(--color-lightgray);
+    border: none;
+    outline: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.search__input::placeholder {
+    color: var(--color-black);
+}

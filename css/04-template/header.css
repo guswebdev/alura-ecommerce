@@ -1,0 +1,16 @@
+@import '../03-organismos/header-logo.css';
+@import '../03-organismos/header-login.css';
+@import '../03-organismos/header-search.css';
+
+.header {
+    background-color: var(--color-white);
+    padding: 1rem 0;
+}
+
+.header > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
